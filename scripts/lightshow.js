@@ -45,5 +45,5 @@ document.getElementById("stop").onclick = function () {
 };
 
 document.getElementById("logout").onclick = function () {
-  window.location.href = "index.html";
+  window.location.href = "index.php";
 };
