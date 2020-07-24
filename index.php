@@ -9,19 +9,19 @@ session_start();
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Jeran Burget" />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <title>Login Page</title>
+    <link rel="stylesheet" href="views/style.css" />
+    <title>JeranDev - Login Page</title>
 </head>
 
 <body>
 
     <div class="container">
         <div class="wrapper">
-            <img src="images/monkey-resize.png" />
+            <img src="views/images/monkey-resize.png" />
             <br />
-            <h1>Welcome!</h1>
+            <h1 id="welcomeText">Welcome!</h1>
             <br />
-            <form method="POST" action="form.php">
+            <form method="POST" action="includes/validation.php">
                 <input type="text" name="username" id="username" placeholder="Username" required />
                 <br />
                 <input type="password" name="password" id="password" placeholder="Password" required />
@@ -31,7 +31,11 @@ session_start();
             </form>
         </div>
     </div>
-    <script src="scripts/indexscripts.js"></script>
+    <script>
+    document.getElementById("register").onclick = function() {
+        window.location.href = "views/register.php";
+    };
+    </script>
 </body>
 
 </html>

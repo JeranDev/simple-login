@@ -2,7 +2,7 @@
 session_start();
 
 if($_SESSION["isLoggedIn"] != true) {
-  header("Location: index.php");
+  header("Location: ../index.php");
 }
 ?>
 
@@ -13,8 +13,8 @@ if($_SESSION["isLoggedIn"] != true) {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Jeran Burget" />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>JeranDev - Members Page</title>
 </head>
 
 <body>
@@ -27,12 +27,12 @@ if($_SESSION["isLoggedIn"] != true) {
             <p id="displayColor"></p>
 
             <canvas id="whiteBoard" width="400" height="400"></canvas>
-            <form method="POST" action="logout.php">
+            <form method="POST" action="../includes/logout.php">
                 <button id="logout">Log Out</button>
             </form>
         </div>
     </div>
-    <script src="scripts/lightshow.js"></script>
+    <script src="lightshow.js"></script>
 </body>
 
 </html>
