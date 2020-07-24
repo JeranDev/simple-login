@@ -27,7 +27,7 @@ if($num == 1) {
     $_SESSION['isLoggedIn'] = true;
     header('location:../views/members.php');
 } else {
-    header('location:../views/index.php');
+    header('location:../index.php');
 }
 
 ?>

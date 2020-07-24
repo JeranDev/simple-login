@@ -56,7 +56,7 @@ $num = mysqli_num_rows($result);
     </div>
     <script>
     document.getElementById("back").onclick = function() {
-        window.location.href = "../views/index.php";
+        window.location.href = "../index.php";
     };
     </script>
     <?php

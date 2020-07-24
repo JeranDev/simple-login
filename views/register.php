@@ -32,7 +32,7 @@ session_start();
     </div>
     <script>
     document.getElementById("back").onclick = function() {
-        window.location.href = "index.php";
+        window.location.href = "../index.php";
     };
     </script>
 </body>
